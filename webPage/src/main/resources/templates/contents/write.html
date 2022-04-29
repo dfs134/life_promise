@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+    <title>생활약속 글쓰기</title>
+    <!-- 부트스트랩 -->
+    <link th:href="@{http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css}" rel="stylesheet">
+    <script th:src="@{http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js}"></script> 
+    <script th:src="@{http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js}"></script> 
+    <!-- include summernote css/js-->
+    <link th:href="@{http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.css}" rel="stylesheet">
+    <script th:src="@{http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.8/summernote.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/write.css}">
+    <script th:inline="javascript">
+    	$(document).ready(function(){
+			$('#summernote').summernote();
+		})
+    </script>
+</head>
+    <section layout:fragment="content" class="section">
+        <div class="secName">
+            <h1>Write</h1>
+        </div>
+        <div class="writeLine"></div>
+        <div class="write01">
+            <span>문의유형 : </span>
+            <select name="" id="">
+                <option value="">상품문의</option>
+                <option value="">배송문의</option>
+                <option value="">기타문의</option>
+            </select>
+            <span>제목 : </span>
+            <input type="text" placeholder="제목을 입력하세요">
+        </div>
+        <div id="summernote"></div> 
+        <div class="write02">
+            <div class="write02_01 wrt">
+                <p>비밀글 설정</p>
+                <span>
+                    <input type="radio" id="openPs" name="openPs">공개
+                    <input type="radio" id="openPs" name="openPs">비공개
+                </span>
+            </div>
+            <div class="writeLine"></div>
+            <div class="write02_02 wrt">
+                <p>비밀번호</p>
+                <input type="text" value="비밀번호 입력">
+            </div>
+            <div class="writeLine"></div>
+            <div class="write02_03">
+                <div class="write02_03_01">
+                    <input type="button" value="목록">
+                </div>
+                <div class="write02_03_02">
+                    <input type="button" value="등록">
+                    <input type="button" value="취소">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+    <title>생활약속 정보수정</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/changeInfo.css}">
+</head>
+    <section layout:fragment="content" class="section">
+        <div class="secName">
+            <h1>Change Info</h1>
+        </div>
+        <table class="change01"> 
+            <colgroup>
+                <col width="20%">
+                <col width="80%">
+            </colgroup>
+            <thead>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </thead>
+            <tbody>
+                <tr class="id">
+                    <td>아이디<strong>*</strong></td>
+                    <td>
+                        <input type="text"  name="id" id="id" placeholder="아이디" disabled>
+                        <span>(영문소문자/숫자, 4~16자)</span>
+                    </td>
+                </tr>
+                <tr class="passwd">
+                    <td>현재 비밀번호<strong>*</strong></td>
+                    <td>
+                        <input type="password"  name="password" id="password" placeholder="비밀번호" disabled>
+                    </td>
+                </tr>
+                <tr class="passwd">
+                    <td>새 비밀번호</td>
+                    <td>
+                        <input type="password"  name="newPassword" id="newPassword" placeholder="새 비밀번호">
+                        <span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</span>
+                    </td>
+                </tr>
+                <tr class="passwd">
+                    <td>비밀번호 확인</td>
+                    <td>
+                        <input type="password"  name="conPassword" id="conPassword" placeholder="비밀번호 확인">
+                        <span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</span>
+                    </td>
+                </tr>
+                <tr class="name">
+                    <td>이름<strong>*</strong></td>
+                    <td>
+                        <input type="text"  name="name" id="name" placeholder="이름">
+                    </td>
+                </tr>
+                <tr class="address">
+                    <td>주소<strong>*</strong></td>
+                    <td>
+                        <div>
+                            <span>
+                                <input type="text" name="address" id="address" readonly>
+                                <button>우편번호</button>
+                            </span>
+                        </div>
+                        <div>
+                            <input type="text" name="mainAddress" id="mainAddress" readonly>
+                            <span>기본주소</span>
+                        </div>
+                        <div>
+                            <input type="text" name="subAddress" id="subAddress">
+                            <span>나머지 주소</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="phone">
+                    <td>자택전화</td>
+                    <td>
+                        <select name="tel" id="tel">
+                            <option value="">02</option>
+                            <option value="">031</option>
+                            <option value="">032</option>
+                            <option value="">051</option>
+                            <option value="">053</option>
+                            <option value="">062</option>
+                            <option value="">042</option>
+                            <option value="">052</option>
+                            <option value="">033</option>
+                            <option value="">070</option>
+                        </select>
+                        -&nbsp;<input type="tel">
+                        -&nbsp;<input type="tel">
+                    </td>
+                </tr>
+                <tr class="phone">
+                    <td>휴대폰<strong>*</strong></td>
+                    <td>
+                        <select name="phone" id="phone">
+                            <option value="">010</option>
+                            <option value="">011</option>
+                            <option value="">016</option>
+                        </select>
+                        -&nbsp;<input type="tel">
+                        -&nbsp;<input type="tel">
+                        <button>인증번호 받기</button>
+                    </td>
+                </tr>
+                <tr class="email">
+                    <td>이메일<strong>*</strong></td>
+                    <td>
+                        <input type="email" id="email" name="email" placeholder="이메일"><span>&nbsp;@</span>
+                        <select name="" id="">
+                            <option value="">naver.com</option>
+                            <option value="">hanmail.net</option>
+                            <option value="">gmail.com</option>
+                            <option value="">직접입력</option>
+                        </select>
+                        <input type="email" placeholder="직접입력" id="email2" name="email2">
+                    </td>
+                </tr>
+                <tr class="radioYN">
+                    <td>SMS 수신여부<strong>*</strong></td>
+                    <td>
+                        <input type="radio" id="sns" name="sns">
+                        <span>수신함</span>
+                        <input type="radio" id="sns" name="sns">
+                        <span>수신 안함</span>
+                        <p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.</p>
+                    </td>
+                </tr>  
+                <tr class="radioYN">
+                    <td>이메일 수신여부<strong>*</strong></td>
+                    <td>
+                        <input type="radio" id="email" name="email">
+                        <span>수신함</span>
+                        <input type="radio" id="email" name="email">
+                        <span>수신 안함</span>
+                        <p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 이메일로 받으실 수 있습니다.</p>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+        <div class="change02">
+            <div>
+                <input type="button" id="" name="" value="회원정보 수정" >
+                <input type="button" id="" name="" value="취소">
+            </div>
+        </div>
+</html>

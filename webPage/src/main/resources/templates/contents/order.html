@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+    <title>생활약속 주문조회</title>
+    <link rel="stylesheet" href="./css/order.css">
+</head>
+    <section layout:fragment="content" class="section">
+        <div class="secName">
+            <h1>Order</h1>
+        </div>
+        <div class="order01">
+            <div class="order01_01">
+                <a href=""><h2>주문내역 조회</h2></a>
+            </div>
+            <div class="order01_01">
+                <a href=""><h2>취소/반품/교환내역</h2></a>
+            </div>
+        </div>
+        <div class="orderLine"></div>
+        <div class="order02">
+            <div class="order02_01">
+                <select name="orderSlt" id="orderSlt">
+                    <option value="">전체</option>
+                    <option value="">입금전</option>
+                    <option value="">입금후</option>
+                    <option value="">배송중</option>
+                </select>
+            </div>
+            <div class="order02_02">
+                <p>
+                    <a href="">오늘</a>
+                    <a href="">1주일</a>
+                    <a href="">1개월</a>
+                    <a href="">3개월</a>
+                    <a href="">6개월</a>
+                </p>
+            </div>
+            <div class="order02_03">
+                <input type="date">
+                <p>~</p>
+                <input type="date">
+                <input type="button" value="조회">
+            </div>
+        </div>
+        <div class="order03">
+            <h1>기본적으로 최근 3개월간의 자료가 조회되며, 기간 검색시 지난 주문내역을 조회하실 수 있습니다.</h1>
+            <h1>주문번호를 클릭하시면 해당 주문에 대한 상세내역을 확인하실 수 있습니다.</h1>
+            <h1>취소/교환/반품 신청은 배송완료일 기준 7일까지 가능합니다.</h1>
+        </div>
+        <table class="order04">
+            <!-- <caption>주문 상품 정보</caption> -->
+            <thead class="ghead">
+                <th class="gh01">주문일자<br>[주문번호]</th>
+                <th class="gh02">이미지</th>
+                <th class="gh03">상품정보</th>
+                <th class="gh04">수량</th>
+                <th class="gh05">상품구매금액</th>
+                <th class="gh06">주문처리상태</th>
+                <th class="gh07">취소/교환/반품</th>
+            </thead>
+            <tbody  class="gbody">
+                <tr>
+                    <!-- 1 -->
+                    <td class="ga01">주문일자1</td>
+                    <td class="ga02"><img src="./imeage/sec3.02.jpg" alt=""></td>
+                    <td class="ga03">
+                        <a href=""><p>상품정보1</p></a>
+                        <p>[옵션]기분전환</p>
+                    </td>
+                    <td class="ga04">1</td>
+                    <td class="ga05">\ 10,000</td>
+                    <td class="ga06">배송중</td>
+                    <td class="ga07">-</td>
+                    <!-- 2 -->
+                    <td class="gb01">주문일자2</td>
+                    <td class="gb02"><img src="./imeage/sec3.03.jpg" alt=""></td>
+                    <td class="gb03">
+                        <a href=""><p>상품정보1</p></a>
+                        <p>[옵션]기분전환</p>
+                    </td>
+                    <td class="gb04">2</td>
+                    <td class="gb05">\ 20,000</td>
+                    <td class="gb06">입금대기</td>
+                    <td class="gb07">교환</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="page_wrap">
+            <div class="page_nation">
+               <a class="arrow pprev" href="#">〈</a>
+               <a class="arrow prev" href="#">〈〈</a>
+               <a href="#" class="active">1</a>
+               <a href="#">2</a>
+               <a href="#">3</a>
+               <a class="arrow next" href="#">〉</a>
+               <a class="arrow nnext" href="#">〉〉</a>
+            </div>
+        </div>
+        <input type="hidden" value="속성">
+    </section>
+</html>

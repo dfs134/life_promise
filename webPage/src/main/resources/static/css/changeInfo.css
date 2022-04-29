@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+strong{
+	color: #ff0000; 
+	font-size: 15px; 
+	font-weight: 700; 
+	margin-left: 3px; 
+	line-height: 21px; 
+	vertical-align: middle;
+}
+
+.change01{
+	width: 70%; 
+	margin: 0 auto; 
+	border: 1px solid #ccc;
+}
+.change01 td{
+	height: 70px; 
+	border: 1px solid #ccc; 
+	vertical-align: middle; 
+	padding-left: 1.1rem;
+	font-size: 0.8rem;
+}
+
+.change01 input{
+	width: 20%;
+}
+
+.change01 .address {
+	height: 130px;
+}
+
+.change01 .phone input, .change01 .phone select{
+	width: 10%; 
+	font-size: 0.5rem; 
+	height: 1rem;
+}
+
+.change01 .phone select{
+	height: 1.5rem;
+}
+
+.change01 .radioYN input{
+	width: 2%;
+}
+
+.change01 .address span input:first-child{
+	width: 10%; 
+	height: 15px; 
+	font-size: 0.5rem;
+}
+
+.change01 .address input{
+	width: 30%; 
+	margin: 5px auto; 
+	font-weight: bold;
+}
+
+.change01 .radioYN p{
+	margin-top: 10px;
+}
+
+.change01 .radioYN select{
+	width: 7%; 
+	height: 20px;
+}
+
+.change01 .email select{
+	width: 15%; 
+	height: 23px;
+}
+
+.change02{
+	width: 70%; 
+	text-align: center; 
+	margin: 30px auto;
+}
+
+.change02 input{
+	width: 13%; 
+	height: 40px; 
+	font-weight: 700;
+}
+
+.change02 input:first-child{
+	background-color: #333; 
+	color: white; 
+}
+
+@media(max-width:1250px){
+	.change01{
+		width: 80%;
+	}
+	
+	.change02 input{
+		width: 19%; 
+		font-size: 0.7rem;
+	}
+	
+	.change01 .passwd input{
+		width: 25%;
+	}
+	
+	.change01 .passwd span{
+		display: block; 
+		margin-top: 10px;
+	}
+}
+@media(max-width:768px){
+	.change01{
+		width: 100%;
+	}
+	
+	.change02 input{
+		width: 25%;
+		font-size: 0.5rem;
+	}
+	
+	.change01 .address span input:first-child{
+		width: 20%;
+	}
+	
+	.change01 .address input{
+		width: 50%;
+	}
+}

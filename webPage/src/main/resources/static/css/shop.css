@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* 바디 */
+.section03 p{
+	font-size: 0.9vw; 
+	font-weight: 500;
+}
+
+h1{
+	font-size: 1.2vw; 
+	font-weight: 800; 
+	margin-top: 20px;
+}
+
+#nav2{
+	position:fixed;
+	right:0;
+	top:0;
+	z-index:2;
+	width:5000px;
+	height:5000px;
+	display: none; 
+	cursor: pointer;
+}
+
+hr{
+	width: 80%; 
+	margin: 30px auto;
+}
+
+.grdtm>div:last-child{
+	width: 90%; 
+	margin: 0 auto;
+}
+
+.section03{
+	width: 64vw; 
+	margin: 10% auto 20%; 
+	display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: repeat(4, auto);  
+    grid-gap: 3% 3%;
+    grid-template-areas: 
+    "mn1 mn3 mn2"
+    "mn4 mn5 mn6"
+    "mn7 mn8 mn9"
+    "m10n mn11 mn12";
+}
+
+.grd01{grid-area: mn1;} .grd02{grid-area: mn2;} .grd03{grid-area: mn3;} .grd04{grid-area: mn4;}
+.grd05{grid-area: mn5;} .grd06{grid-area: mn6;} .grd07{grid-area: mn7;} .grd08{grid-area: mn8;}
+.grd09{grid-area: mn9;} .grd010{grid-area: m10n;} .grd011{grid-area: mn11;} .grd012{grid-area: mn12;}
+
+.grdtm {
+	width: 100%;
+	height: 100%;
+	font-family: "Shrikhand";
+	display: flex;
+	flex-flow: column;
+	align-content: center;
+	text-align: center;
+	line-height: normal;
+}
+
+@media(max-width:1250px){
+	.section03{
+	    margin-bottom: 250px; 
+	    grid-template-columns: repeat(2,1fr); 
+	    grid-template-rows: repeat(6, auto); 
+	    grid-row-gap: 2%;
+	    grid-template-areas: 
+	    "mn1  mn3"
+	    "mn2  mn4"
+	    "mn5  mn6"
+	    "mn7  mn8"
+	    "mn9  m10n"
+	    "mn11 mn12"
+	}
+	
+	hr{
+		width: 80%; 
+		margin: 20px auto;
+	}
+}
+
+@media(max-width:768px){
+	.section03{
+	    margin-bottom: 250%; 
+	    grid-template-columns: repeat(1,1fr); 
+	    grid-template-rows: repeat(12, auto); 
+	    grid-row-gap: none;
+	    grid-template-areas: 
+	    "mn1"
+	    "mn3"
+	    "mn2"
+	    "mn4"
+	    "mn5"
+	    "mn6"
+	    "mn7"
+	    "mn8"
+	    "mn9"
+	    "m10n"
+	    "mn11"
+	    "mn12"
+	}
+	
+	h1{
+		font-size: 4vw;
+	}
+	
+	figure.snip1384 h3{
+		font-size: 0.5em;
+	}
+	
+	figure.snip1384 p{
+		font-size: 0.2em;
+	}
+	
+}  

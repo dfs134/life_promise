@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* 바디 */
+.section{
+	width: 90%; 
+	margin: 0 auto;
+}
+	
+.about{
+	width: 100%;
+}
+	
+.about .about_img{
+	width: 100%; 
+	margin: 0 auto;
+}
+	
+.about .about_img img{
+	width: 100%;
+}
+	
+.about .about_txt{
+	width: 100%; 
+	margin: 0 auto;
+}
+	
+.about .about_txt p{
+	text-align: center; 
+	line-height: 2.0rem; 
+	color: #30170a; 
+	font-size: 1.2rem; 
+	font-weight: 400;
+}  
+	
+.about .about_txt p:nth-child(1){
+	color: #3e662e; 
+	font-weight: bold; 
+	font-size: 1.5rem; 
+	margin: 2.5rem 0 1.2rem;
+}
+	
+.about .about_txt p:nth-child(2){
+	font-size: 1.7rem; 
+	font-weight: 700; 
+	margin-bottom: 1.2rem;
+}
+	
+.about .logo{
+	width: 100%; 
+	display: flex; 
+	flex-flow: row; 
+	justify-content: center; 
+	margin-top: 50px;
+}
+	
+.about .logo img{
+	width: 120px;
+	height: 120px;
+	opacity: 0.2; 
+	margin-bottom: 70px;
+}
+	
+.brand01,.brand02,.brand03{
+	width: 100%;
+}
+	
+.brand01 .brand_img,.brand02 .brand_img,.brand03 .brand_img{
+	width: 100%; 
+	margin: 0 auto;
+}
+	
+.brand01 .brand_img img,.brand02 .brand_img img,.brand03 .brand_img img{
+	width: 100%;
+}
+	
+.brand01 .brand_txt,.brand02 .brand_txt,.brand03 .brand_txt{
+	width: 100%; 
+	margin: 0 auto;
+}
+	
+.brand01 .brand_txt p,.brand02 .brand_txt p,.brand03 .brand_txt p{
+	text-align: center; 
+    line-height: 2.0rem; 
+    color: #30170a; 
+    font-size: 1.2rem; 
+    font-weight: 400; 
+    margin-bottom: 100px;
+}  
+    
+.brand01 .brand_txt p:nth-child(1),.brand02 .brand_txt p:nth-child(1),.brand03 .brand_txt p:nth-child(1){
+	color: #3e662e; 
+    font-weight: bold; 
+    font-size: 1.5rem; 
+    margin: 2.5rem 0 1.2rem;
+}
+    
+.brand01 .brand_txt p:nth-child(2),.brand02 .brand_txt p:nth-child(2),.brand03 .brand_txt p:nth-child(2){
+	font-size: 1.7rem; 
+    font-weight: 700; 
+    margin-bottom: 1.2rem;
+}
+    

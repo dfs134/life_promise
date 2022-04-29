@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<header th:fragment="header" class="header">
+    <div class="new">
+        <p>신규회원 가입 시 바로 사용가능한 5,000원 할인쿠폰 + 적립금1,000원 바로지급</p>
+    </div>
+    <!-- 모바일 헤더 -->
+    <div class="mobileBtn">
+        <div class="mbTopleft">
+            <img th:src="@{/imeage/top_bn_01 (1).png}" alt="">
+        </div>
+        <div class="mbTopLogo">
+            <a th:href="@{/index}"><img th:src="@{/imeage/top_logo.png}" alt="탑로고"></a>
+        </div>
+        <div class="ham">
+            <a href="#"><img th:src="@{/imeage/ham.png}" alt=""></a>
+        </div>
+    </div>
+
+    <article class="nav_top" id="nav_top">
+        <div class="join clearfix">
+            <p class="fleft">
+                <a sec:authorize="isAnonymous()" th:href="@{/User/login}"><p>로그인</p></a>
+                <a sec:authorize="isAuthenticated()" th:href="@{/User/logout}"><p>로그인</p></a>
+            </p>
+            <p class="fright">
+                <a th:href="@{/User/signUp}">회원가입</a>                  
+            </p>
+        </div>
+        <div class="join02 clearfix">
+            <ul>
+                <li>  
+                    <a th:href="@{/shoppingBasket}">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                        <p>CART</p>
+                    </a>
+                    <a th:href="@{/mypage}">
+                        <i class="fa-solid fa-person "></i>
+                        <p>MY PAGE</p>
+                    </a>
+                    <a th:href="@{/order}">
+                        <i class="fa-solid fa-bell-concierge "></i>
+                        <p>ORDER</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="moLine"></div>
+        <div class="join03 clearfix">
+            <ul>
+                <li>    
+                    <a th:href="@{/brand}"><p>Brend</p></a>
+                    <a th:href="@{/event}"><p>Event</p></a>
+                    <a th:href="@{/shop}"><p>Shop</p></a>
+                    <a th:href="@{/service}"><p>Sevice</p></a>
+                    <a th:href="@{/offline}"><p>Offline</p></a>
+                </li>
+            </ul>
+        </div>
+        <div class="join04 clearfix">
+            <div class="mobileFot">
+                <div class="moCall">
+                    <p class="moP">Customer center</p>
+                    <p class="moP02">1899-5541</p>
+                    <p>
+                        MON-FRI. 11:00-17:30 (lunch 12:00-13:30)<br>
+                        SAT.SUN.Holiday Close
+                    </p>
+                </div>
+                <div class="moUpdown"></div>
+                <div class="moAdress">
+                    <p class="moP">Exchange & Return</p>
+                    <p class="moP02">반품주소</p>
+                    <p>
+                        서울특별시 성동구 아차산로 153<br>
+                        예림출판문화센터 5층 넥스트플레이어
+                    </p>
+                </div>
+                <div class="moUpdown"></div>
+                <div class="moBank">
+                    <p class="moP">Bank Info</p>
+                    <p>우리은행 1005-403-566197</p>
+                    <p>주식회사넥스트플레이어</p>
+                </div>
+            </div>
+        </div>         
+    </article>
+    
+    <!-- pc 헤더 -->
+    <div class="logo">
+        <div class="nav01">
+            <ul>
+                <li>
+                    <a sec:authorize="isAnonymous()" th:href="@{/User/login}"><p>로그인</p></a>
+                    <a sec:authorize="isAuthenticated()" th:href="@{/User/logout}"><p>로그아웃</p></a>
+                    <a th:href="@{/User/signUp}"><p>회원가입</p></a>
+                    <a th:href="@{/shoppingBasket}"><p>장바구니</p></a>
+                    <a th:href="@{/mypage}"><p>마이페이지</p></a>
+                    <a th:href="@{/order}"><p>주문조회</p></a>
+                </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <a th:href="@{/index}"><img th:src="@{/imeage/top_logo.png}" alt="탑로고"></a>
+        </div>
+        <div class="nav02">
+            <div class="header-img01">
+                <img th:src="@{/imeage/top_bn_01 (1).png}" alt="">
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>   
+                        <a th:href="@{/brand}"><p>Brend</p></a>
+                        <a th:href="@{/event}"><p>Event</p></a>
+                        <a th:href="@{/shop}"><p>Shop</p></a>
+                        <a th:href="@{/service}"><p>Sevice</p></a>
+                        <a th:href="@{/offline}"><p>Offline</p></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="headeRoute">
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-caret-right"></i>
+                    <p>현제페이지</p>
+                </li>
+            </div>
+        </div>
+    </div>
+    <div class="nav"></div>
+    
+    <script th:inline="javascript">
+    $(document).ready(function(){
+
+        //헤더 햄버거 스크립트
+        $(".ham").click(function(){ 
+          $(".nav_top").addClass("on"); 
+          $(".nav_top").css("display", "block");
+          $(".nav").fadeIn();
+        });
+        $(".nav").on('click',function(){ 
+          $(".nav_top").removeClass("on"); 
+          $(".nav_top").css("display", "none");
+          $(".nav").fadeOut() 
+        });
+
+        // 상위 메뉴바 고정
+        $(window).resize(function(){
+			$(window).scroll(function(){
+				var scroll = $(this).scrollTop();
+				if($(window).width() > 1024){
+					if(scroll > 150){
+						$(".nav02").addClass("nav02Active");
+                        $(".header-img01, .headeRoute").addClass("disNon");
+					}else{
+						$(".nav02").removeClass("nav02Active");
+                        $(".header-img01, .headeRoute").removeClass("disNon");
+					}
+				}else{
+					if(scroll > 0){
+						$(".nav02").addClass("nav02Active");
+                        $(".header-img01, .headeRoute").addClass("disNon");
+					}else{
+						$(".nav02").removeClass("nav02Active")
+                        $(".header-img01, .headeRoute").removeClass("disNon");
+					}
+				}
+			});
+		}).resize();
+        
+      });
+	</script>
+</header>
+
+</html>

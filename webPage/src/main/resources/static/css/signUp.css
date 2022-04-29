@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+/* 바디 */
+table.joinTable { 
+	border-collapse: separate; 
+	border-spacing: 1px; 
+	text-align: left; 
+	line-height: 1.5; 
+	border-top: 1px solid #ccc; 
+	margin: 40px 10px; 
+    width: 80%; 
+    height: 200px; 
+    margin: 2% auto; 
+}
+    
+table.joinTable th { 
+	vertical-align: middle !important; 
+	width: 25%; 
+	padding: 10px; 
+	font-weight: bold; 
+	vertical-align: top; 
+    border-bottom: 1px solid #ccc; 
+    background: #efefef; 
+}
+
+table.joinTable td {
+	vertical-align: middle !important; 
+	width: 350px; 
+	padding: 10px;  
+	vertical-align: top; 
+	border-bottom: 1px solid #ccc;  
+}
+
+table.joinTable td input{
+	width: 20%; 
+	height: 20px;
+}
+
+table.joinTable td.joinHP input{
+	width: 15%; 
+	height: 18px;
+}
+
+table.joinTable td.joinHP #tel{
+	width: 15%;
+	height: 25px;
+}
+
+table.joinTable td.emailAd input{
+	width: 15%; 
+	height: 18px;
+}
+
+table.joinTable td.emailAd #email{
+	width: 15%; 
+	height: 25px;
+}
+
+strong{
+	color: #ff0000; 
+	font-size: 15px; 
+	font-weight: 700; 
+	margin-left: 3px; 
+	line-height: 21px; 
+	vertical-align: middle;
+}
+
+.agreeBoxBd{
+	width: 80%;
+	border-top: 1px solid #ccc; 
+	border-bottom: 1px solid #ccc; 
+	margin: 20px auto; 
+	background-color: #fbfafa;
+}
+
+.agreeBoxBd h1{
+	width: 82%; 
+	margin: 20px auto; 
+	font-weight: bold; 
+	font-size: 0.8rem;
+}
+
+.agreeBox01 {
+	margin: 10px auto; 
+	width:80%; 
+	height:150px; 
+	overflow:auto;  
+	border:1px solid #ccc; 
+	padding: 0 1em; 
+	background-color: #ffffffd8;
+}
+
+td.sexBox input{
+	width: 5% !important;
+	height: 15px !important;
+}
+
+.agreeBoxBd .agreeRdBox{
+	width: 80%;
+	margin: 0 auto;
+	text-align: right;
+}
+
+.agreeBoxBd .agreeRdBox:last-child{
+	margin-bottom: 40px;
+}
+
+.agreeBoxBd ul{
+	line-height: 1.8rem; 
+	font-size: 1vw;
+}
+
+.agreeBoxBd li{
+	line-height: 1.3rem; 
+	font-size: 0.8vw;
+}
+
+.agreeBoxBd p{
+	line-height: 1.1rem; 
+	font-size: 0.7vw;
+}
+
+.agreeSubmit{
+	text-align: center;
+}
+
+.agreeSubmit input{
+	width: 10vw; 
+	height: 3rem; 
+	margin-bottom: 30px; 
+	font-size: 0.8vw;
+}
+
+.id_ok{color:#fff; display: none;}
+.id_already{color:#6A82FB; display: none;}
+
+@media(max-width:1250px){
+    table.joinTable{
+		font-size: 1vw;
+	}
+    table.joinTable td input{
+		width: 40%; 
+		font-size: 0.8vw;
+	}
+    table.joinTable td.emailAd input, table.joinTable td.joinHP #tel{
+        width: 25%;
+    }
+    table.joinTable td.emailAd #email{
+		width: 20%;
+	}
+    table.joinTable td.joinHP input{
+		width: 20%;
+	}
+	
+}

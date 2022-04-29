@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+    <title>생활약속 로그인</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+  <!--  <script th:inline="javascript">
+        window.onload = function() {
+			var btn = document.getElementById('loginbtn');
+			
+			var joinIn = document.joinIn;
+			var id = document.getElementById('id');
+            var passwd = document.getElementById('password');
+    
+            function login(){
+				
+				if(id.value == '' || id.value == null){
+					alert("아이디를 입력해주세요");
+				} else if(passwd.value == '' || passwd.value == null){
+					alert("비밀번호를 입력해주세요");
+				} else{
+					joinIn.submit();
+				}	
+			}
+        }
+
+    </script>-->
+    <script th:inline="javascript">
+    
+    	$(document).ready(function(){
+			var i = document.querySelector(".joinIn");
+			$('#loginbtn').click(function(){
+				console.log("22222");
+				console.log(i);
+				alert(i);
+			});
+		});
+		
+		
+		   
+ 	</script>
+</head>
+    <section layout:fragment="content" class="loginPage">
+        <div class="secName">
+            <h1>LOGIN</h1>
+        </div>
+        <div class="loginUp">
+            <div class="submit">
+                <form class="joinIn" th:action="@{/User/login}" method="post">
+                	<div th:if="${param.error}">
+			            <div class="alert alert-danger">
+			                사용자ID 또는 비밀번호를 확인해 주세요.
+			            </div>
+			        </div>
+                    <label for="username">ID</label>
+                    <input type="text" name="username" id="username" placeholder="아이디">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="비밀번호">
+                    <button type="submit" id="loginbtn">로그인</button>
+                </form>
+            </div>  
+        </div>
+        <div class="loginDown">
+            <div><a th:href="@{/findId}">아이디 찾기</a></div>
+            <div class="updown2"></div>
+            <div><a th:href="@{/findPw}">비밀번호 찾기</a></div>
+            <div class="updown2"></div>
+            <div><a th:href="@{/signUp}">회원가입</a></div>     
+        </div>    
+    </section>
+</html>

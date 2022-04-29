@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- 푸터 -->
+<footer th:fragment="footer" class="footer">
+    <div class="footer01">
+        <div class="footer-width">
+            <div class="footerSub01">
+                <div class="call">
+                    <p>Customer center</p>
+                    <p>1899-5541</p>
+                    <p>
+                        MON-FRI. 11:00-17:30 (lunch 12:00-13:30)<br>
+                        SAT.SUN.Holiday Close
+                    </p>
+                </div>
+                <div class="updown"></div>
+                <div class="adress">
+                    <p>Exchange & Return</p>
+                    <p>반품주소</p>
+                    <p>
+                        서울특별시 성동구 아차산로 153<br>
+                        예림출판문화센터 5층 넥스트플레이어
+                    </p>
+                </div>
+                <div class="updown"></div>
+                <div class="bank">
+                    <p>Bank Info</p>
+                    <p>우리은행 1005-403-566197</p>
+                    <p>주식회사넥스트플레이어</p>
+                </div>
+            </div>
+        </div> 
+    </div>       
+
+    <div class="footer02">
+        <div class="footer-width">   
+            <div class="footerSub02">
+                <div class="foot-nav">
+                    <p><a th:href="@{/shop}">상품보기</a></p>
+                    <div class="updown02"></div>
+                    <p><a th:href="@{/terms}">이용약관 </a></p>
+                    <div class="updown02"></div>
+                    <p><a th:href="@{/infoProcess}">개인정보처리방침</a></p>
+                </div>
+                <div class="foot-txt">
+                    <p>
+                        상호 : 생활약속     대표. Sun Tae Park     이메일. siromuse@nextplayer.tv<br>
+                        사업자등록번호 : 201-86-33675 [사업자정보확인]     통신판매업 신고. 제 2018-서울성동-1517 호<br>
+                        개인정보보호책임자 : 김유진   주소. 서울특별시 성동구 성수이로22길 60 (성수동2가) K2빌딩 5층<br>
+                    </p>
+                    <p>
+                        에스크로 고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 PG 사의 구매안전서비스를 이용하실 수 있습니다. (서비스가입사실확인)<br>
+                        Copyright ⓒ 생활약속 All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="topBtn">
+        <a class=“topbutton” href=“#”>
+            <i class="fa-solid fa-circle-chevron-up fa-3x"></i>  
+        </a>
+    </div>
+    <div class="lowBtn">
+        <a class=“bottombutton” href=“#”>
+            <i class="fa-solid fa-circle-chevron-down fa-3x"></i>  
+        </a>
+    </div>      
+
+
+	<script th:inline="javascript">
+	    $(document).ready(function(){  
+	    $(window).scroll(function(){
+	        if ($(this).scrollTop() > 100) {
+	            $('.topBtn').fadeIn();
+	        } else {
+	            $('.topBtn').fadeOut();
+	        }
+	    }); 
+	    $('.topBtn').click(function(){
+	        $('html, body').animate({scrollTop : 0},800);
+	        return false;
+	        });
+	
+	
+	    $(document).ready(function(){
+	    $(window).scroll(function(){
+	        if ($(this).scrollTop() > 100) {
+	            $('.lowBtn').fadeIn();
+	        } else {
+	            $('.lowBtn').fadeOut();
+	        }
+	    }); 
+	
+	    var scrollHeight = $(document).height();
+	    $('.lowBtn').click(function(){
+	        $('html, body').animate({scrollTop : scrollHeight},800);
+	        return false;
+	        });
+	    })
+	
+	    });
+	</script>
+</footer>
+</html>

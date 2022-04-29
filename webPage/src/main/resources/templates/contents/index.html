@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+    <title>생활약속</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index_section.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/swiper-bundle.min.css}">
+    <script th:src="@{/js/index_section.js}"></script>
+    <script th:src="@{/js/swiper-bundle.min.js}"></script>
+	
+	<script th:inline="javascript">
+	    window.onload = function(){
+			var swiper = new Swiper('.swiper-container', {
+		        spaceBetween: 30,
+		        loop :true,
+		        autoplay: {
+		            delay: 2500
+		        },
+		        pagination: {
+		            el: '.swiper-pagination',
+		            clickable: true,
+				},
+			});
+		}
+	 </script>
+</head>
+    <section layout:fragment="content" class="section">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background: linear-gradient(rgb(31, 88, 50), rgb(6, 66, 27));"><a th:href="@{/detailpage}"><img th:src="@{/imeage/slider01.png}" alt=""></a></div>
+            <div class="swiper-slide" style="background: linear-gradient(rgb(177, 48, 95), rgb(177, 48, 95));"><a th:href="@{/detailpage}"><img th:src="@{/imeage/slider02.png}" alt=""></a></div>
+            <div class="swiper-slide" style="background: linear-gradient(rgb(252, 191, 65), rgb(252, 191, 65));"><a th:href="@{/detailpage}"><img th:src="@{/imeage/slider03.png}" alt=""></a></div>
+            <div class="swiper-slide" style="background: linear-gradient(rgb(173, 16, 57), rgb(110, 35, 55));;"><a th:href="@{/detailpage}"><img th:src="@{/imeage/slider04.png}" alt=""></a></div>
+            <div class="swiper-slide" style="background: linear-gradient(rgb(55, 98, 68), rgb(55, 98, 68));;"><a th:href="@{/detailpage}"><img th:src="@{/imeage/slider05.png}" alt=""></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="section01">
+            <div class="best-txt">
+                <p>주간 생활약속 베스트</p>
+                <p>위클리 베스트 아이템을 한 번에!!</p>
+            </div>
+            <div class="best-img">
+                <div class="sub-item scroll">
+
+                    <div class="sub01">
+                        <div>
+                            <figure class="snip1384">
+                                <img th:src="@{/imeage/shop/sec01.jpg}" alt="sample83" />
+                                <figcaption>
+                                    <h3>기분전환S</h3>
+                                    <p>비트, 호박, 모링가, S-mix, NP-mix, 백야초, 특허성분2종</p>
+                                    <p>기분전환 오리지날 업그레이드버전               
+                                    <p><del>₩42,800</del><br>₩33,120</p>
+                                    <p>자세히 보러가기</p>
+                                </figcaption>
+                                <a th:href="@{/detailpage}"></a>
+                            </figure>
+                        </div>
+                        <div class="subTxt">
+                            <h1 class="bigP">기분전환S [5gx20포]<br>1500만포기념 ~53%할인</h1>
+                            <hr>
+                            <p>비트, 호박, 모링가, S-mix, NP-mix, 백야초, 특허성분2종</p>
+                            <p>기분전환 오리지날 업그레이드버전<br> V라인을 책임질 한의사 공동개발 스페셜레시피<br>100여가지의 약초를 한-포에 담았다!</p>                 
+                            <p><del>₩42,800</del><br>₩33,120</p>
+                            <div class="star">
+                                <img th:src="@{/imeage/star.png}" alt="별">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub02">
+                        <div>
+                            <figure class="snip1384">
+                                <img th:src="@{/imeage/shop/sec02.jpg}" alt="sample83" />
+                                <figcaption>
+                                    <h3>ABC환</h3>
+                                    <p>사과, 비트, 당근</p>
+                                    <p>전세계가 극찬한 ABC주스를 환으로 간편하게              
+                                    <p><del>₩34,800</del><br>₩29,800</p>
+                                    <p>자세히 보러가기</p>
+                                </figcaption>
+                                <a th:href="@{/detailpage}"></a>
+                            </figure>
+                        </div>
+                        <div class="subTxt">
+                            <h1 class="bigP">ABC환 [5gx20포]<br>1500만포기념! ~54%할인</h1>
+                            <hr>
+                            <p>사과, 비트, 당근</p>
+                            <p>전세계가 극찬한 ABC주스를 환으로 간편하게<br>막힘없이 가벼운 건강을 위해</p>                 
+                            <p><del>₩34,800</del><br>₩29,800</p>
+                            <div class="star">
+                                <img th:src="@{/imeage/star.png}" alt="별">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub03">
+                        <div>
+                            <figure class="snip1384">
+                                <img th:src="@{/imeage/shop/sec03.jpg}" alt="sample83" />
+                                <figcaption>
+                                    <h3>기분전환 알파</h3>
+                                    <p>비트, 호박, 모링가, 차전자피, 녹각, 강황</p>
+                                    <p>기분전환 오리지날에 식이섬유를 더한 기분전환 알파             
+                                    <p><del>₩42,800</del><br>₩33,120</p>
+                                    <p>자세히 보러가기</p>
+                                </figcaption>
+                                <a th:href="@{/detailpage}"></a>
+                            </figure>
+                        </div>
+                        <div class="subTxt">
+                            <h1 class="bigP">기분전환 알파 [5gx20포]<br>1500만포기념! ~53%할인</h1>
+                            <hr>
+                            <p>비트, 호박, 모링가, 차전자피, 녹각, 강황</p>
+                            <p>기분전환 오리지날에 식이섬유를 더한 기분전환 알파<br>내 몸 답답함없이 건강을 위해 차전자피까지!</p>                 
+                            <p><del>₩42,800</del><br>₩33,120</p>
+                            <div class="star">
+                                <img th:src="@{/imeage/star.png}" alt="별">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>           
+            </div>
+            <div class="best-sub">
+                
+            </div>
+        </div>
+        <div class="section02">
+            <div class="sec02-txt">
+                <p>가을맞이! 최대54%할인</p>
+                <p>전상품 기간한정 할인혜택</p>
+            </div>
+            <div class="big-img">
+            <a th:href="@{/shop}"> <img th:src="@{/imeage/sec2.01.jpg}" alt="큰이미지"></a>
+            </div>
+            <div class="small-img">
+                <a th:href="@{/event}"><img th:src="@{/imeage/sec2.02.jpg}" alt="작은이미지01"></a>
+                <a th:href="@{/offline}"><img th:src="@{/imeage/sec2.03.jpg}" alt="작은이미지02"></a>
+            </div>
+        </div>
+        <div class="section03">
+            <div class="sec03-txt">
+                <p>건강한 자연원료만 고집하는 생활약속</p>
+                <p>영양소가 가장 풍부한 제철에 수확, 건조까지!</p>
+            </div>
+            <div class="best-img">
+                <div class="sub-item scroll">
+
+                    <div class="sub01 dwn">
+                        <div>
+                            <figure class="snip1384">
+                                <img th:src="@{/imeage/shop/sec04.jpg}" alt="sample83" />
+                                <figcaption>
+                                    <h3>마셔보리</h3>
+                                    <p>새싹보리, 파인애플, 레몬과즙, 옥수수수염, 브로콜리, 녹차, 메리로트,<br>브로멜라인</p>
+                                    <p>청정제주 무농약 새싹보리로 대장균, 금속이물검사 완료된 마셔보리!               
+                                    <p><del>₩34,800</del><br>₩29,800</p>
+                                    <p>자세히 보러가기</p>
+                                </figcaption>
+                                <a th:href="@{/detailpage}"></a>
+                            </figure>
+                        </div>
+                        <div class="subTxt">
+                            <h1 class="bigP">청정제주에서 온 마셔보리 [4gx20포]~54%할인</h1>
+                            <hr>
+                            <p>새싹보리, 파인애플, 레몬과즙, 옥수수수염, 브로콜리, 녹차, 메리로트,<br>브로멜라인</p>
+                            <p>청정제주 무농약 새싹보리로 대장균, 금속이물검사 완료된 마셔보리!<br>막힘없이 가벼운 건강을 위해</p>                 
+                            <p><del>₩34,800</del><br>₩29,800</p>
+                            <div class="star">
+                                <img th:src="@{/imeage/star.png}" alt="별">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub02 dwn">
+                        <div>
+                            <figure class="snip1384">
+                                <img th:src="@{/imeage/shop/sec05.jpg}" alt="sample83" />
+                                <figcaption>
+                                    <h3>기분전환 브이라인티</h3>
+                                    <p>비트, 호박, 모링가, 히비스커스, 우롱, 팥</p>
+                                    <p>하루가 달라지는 마법같은 티<br>내 몸 속 막힘없이 맑은 건강을 위해</p>                 
+                                    <p><del>₩34,800</del><br>₩29,800</p>
+                                    <p>자세히 보러가기</p>
+                                </figcaption>
+                                <a th:href="@{/detailpage}"></a>
+                            </figure>
+                        </div>
+                        <div class="subTxt">
+                            <h1 class="bigP">기분전환 브이라인티<br>[2.2gx20개입]~54%할인</h1>
+                            <hr>
+                            <p>비트, 호박, 모링가, 히비스커스, 우롱, 팥</p>
+                            <p>하루가 달라지는 마법같은 티<br>내 몸 속 막힘없이 맑은 건강을 위해</p>                 
+                            <p><del>₩34,800</del><br>₩29,800</p>
+                            <div class="star">
+                                <img th:src="@{/imeage/star.png}" alt="별">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub03 dwn">
+                        <div>
+                            <figure class="snip1384">
+                                <img th:src="@{/imeage/shop/sec06.jpg}" alt="sample83" />
+                                <figcaption>
+                                    <h3>공백환</h3>
+                                    <p>양배추,감초,브로콜리,백년초</p>
+                                    <p>화학 성분은 단 하나도 들어가지 않은 속 편한 습관<br>자극적인 생활엔 없어서 안될 필수품</p>                 
+                                    <p><del>₩34,800</del><br>₩29,800</p>
+                                    <p>자세히 보러가기</p>
+                                </figcaption>
+                                <a th:href="@{/detailpage}"></a>
+                            </figure>
+                        </div>
+                        <div class="subTxt">
+                            <h1 class="bigP">공백환 [5gx20포]<br>1500만포기념! ~54%할인</h1>
+                            <hr>
+                            <p>양배추,감초,브로콜리,백년초</p>
+                            <p>화학 성분은 단 하나도 들어가지 않은 속 편한 습관<br>자극적인 생활엔 없어서 안될 필수품</p>                 
+                            <p><del>₩34,800</del><br>₩29,800</p>
+                            <div class="star">
+                                <img th:src="@{/imeage/star.png}" alt="별">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>           
+            </div>
+            <div class="best-img">
+                <div class="sub-item scroll">
+
+                    <div class="sub01 dwn">
+                        <div>
+                            <figure class="snip1384">
+                                <img th:src="@{/imeage/shop/sec07.jpg}" alt="sample83" />
+                                <figcaption>
+                                    <h3>흑자전환</h3>
+                                    <p>어성초, 검은콩, 자소엽</p>
+                                    <p>건강한 두피를 위한 현명한 선택<br>흑을 위한 흑자전환!</p>                 
+                                    <p><del>₩34,800</del><br>₩29,800</p>
+                                    <p>자세히 보러가기</p>
+                                </figcaption>
+                                <a th:href="@{/detailpage}"></a>
+                            </figure>
+                        </div>
+                        <div class="subTxt">
+                            <h1 class="bigP">흑자전환 [4gx20포]<br>1500만포기념 ~54%할인</h1>
+                            <hr>
+                            <p>어성초, 검은콩, 자소엽</p>
+                            <p>건강한 두피를 위한 현명한 선택<br>흑을 위한 흑자전환!</p>                 
+                            <p><del>₩34,800</del><br>₩29,800</p>
+                            <div class="star">
+                                <img th:src="@{/imeage/star.png}" alt="별">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub02 dwn">
+                        <div>
+                            <figure class="snip1384">
+                                <img th:src="@{/imeage/shop/sec08.jpg}" alt="sample83" />
+                                <figcaption>
+                                    <h3>횟수전환</h3>
+                                    <p>마카, 복분자, 6년근홍삼</p>
+                                    <p>진짜 마카를 통으로 갈아 넣은 지치지 않는 체력<br>좋은 성분만 가득 담았습니다.</p>                 
+                                    <p><del>₩34,800</del><br>₩29,800</p>
+                                    <p>자세히 보러가기</p>
+                                </figcaption>
+                                <a th:href="@{/detailpage}"></a>
+                            </figure>
+                        </div>
+                        <div class="subTxt">
+                            <h1 class="bigP">횟수전환 [5gx20포]<br>1500만포기념! ~53%할인</h1>
+                            <hr>
+                            <p>마카, 복분자, 6년근홍삼</p>
+                            <p>진짜 마카를 통으로 갈아 넣은 지치지 않는 체력<br>좋은 성분만 가득 담았습니다.</p>                 
+                            <p><del>₩34,800</del><br>₩29,800</p>
+                            <div class="star">
+                                <img th:src="@{/imeage/star.png}" alt="별">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sub03 dwn">
+                        <div>
+                            <figure class="snip1384">
+                                <img th:src="@{/imeage/shop/sec09.jpg}" alt="sample83" />
+                                <figcaption>
+                                    <h3>태세전환</h3>
+                                    <p>강황, 헛개, 블랙페퍼</p>
+                                    <p>건강을 위한 속 편한 선택! 회식 필수품<br>주당을 위해 만들었습니다.</p>                 
+                                    <p><del>₩34,800</del><br>₩29,800</p>
+                                    <p>자세히 보러가기</p>
+                                </figcaption>
+                                <a th:href="@{/detailpage}"></a>
+                            </figure>
+                        </div>
+                        <div class="subTxt">
+                            <h1 class="bigP">태세전환 [4gx20포]<br>1500만포기념 ~54%할인</h1>
+                            <hr>
+                            <p>강황, 헛개, 블랙페퍼</p>
+                            <p>건강을 위한 속 편한 선택! 회식 필수품<br>주당을 위해 만들었습니다.</p>                 
+                            <p><del>₩34,800</del><br>₩29,800</p>
+                            <div class="star">
+                                <img th:src="@{/imeage/star.png}" alt="별">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>           
+            </div>
+        </div>
+        <div id="nav2"></div>          
+    </section>
+</html>

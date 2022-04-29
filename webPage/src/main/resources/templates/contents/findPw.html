@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+    <title>생활약속</title>
+    <link rel="stylesheet" href="./css/findPw.css">
+</head>
+    <section layout:fragment="content" class="section">
+        <div class="secName">
+            <h1>비밀번호 찾기</h1>
+        </div>
+        <div class="selectfind">
+            <a href="./findId.html"><p>아이디 찾기</p></a>
+            <a href="./findPw.html"><p>비밀번호 찾기</p></a>
+        </div>
+        <div class="bigFind">
+            <div class="subFind">
+                <div class="subFind01">
+                    <input type="radio" name="rad">
+                    <span>이메일 인증</span>
+                    <input type="radio" name="rad">
+                    <span>휴대폰 인증</span>
+                </div>
+                <div class="subFind02">
+                    <p>ID</p>
+                    <input type="text" placeholder="아이디">
+                    <p>NAME</p>
+                    <input type="text" placeholder="이름">
+                    <p>BIRTH DATE</p>
+                    <input type="text" placeholder="생년월일(뒤 6자리)">
+                </div>
+                <div class="subFind03">
+                    <button>비밀번호 찾기</button>
+                </div>
+                <div class="subFind03">
+                    <a href="./login.html"><p>로그인</p></a>
+                    <a href="#"><p>/</p></a>
+                    <a href="./signUp.html"><p>회원가입</p></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</html>

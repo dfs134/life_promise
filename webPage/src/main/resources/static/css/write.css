@@ -1,0 +1,118 @@
+@charset "UTF-8";
+a{
+	color: #666; 
+}
+
+p{
+	margin:0px
+}
+
+.write01{
+	margin: 30px auto;
+}
+
+.write01 span{
+	margin-left: 1.2rem;
+	margin-right: 1rem;
+}
+
+.write01 select{
+	width: 10%;
+	height: 30px;
+}
+
+.write01 input{
+	width: 30%; 
+	height: 25px; 
+	margin: 0 20px;
+}
+
+.write02{
+	font-size: 0.9rem;
+}
+
+.write02 .wrt{
+	display: flex; 
+	flex-flow: row nowrap; 
+	justify-content: start; 
+	align-items: center; 
+	margin: 20px auto;
+}
+
+.write02 p{
+	margin: 0 30px; 
+	width: 10%; 
+	font-weight: 600;
+}
+
+.write02 .wrt input{
+	margin: 0 0.7rem;
+}
+
+.writeLine{
+	margin: 20px auto; 
+	border-bottom: 1px solid #ccc;
+}
+
+.write02 .write02_03{
+	display: flex; 
+	flex-flow: row nowrap; 
+	justify-content: space-between;
+}
+
+.write02_03>div{
+	width: 30%;
+}
+
+.write02_03>div:last-child{
+	text-align: end;
+}
+
+.write02 .write02_03 input{
+	width: 25%; 
+	height: 40px;
+}
+
+.write02 .write02_03 .write02_03_01 input{
+	background-color: white; 
+	border: 1px solid;
+}
+
+.write02 .write02_03 .write02_03_02 input:first-child{
+	background-color: #444; 
+	color: white;
+}
+
+.nav02Active{
+	height: 65px;
+}
+
+@media(max-width:1250px){
+    .write02 .write02_03 input{
+		width: 30%;
+	}
+}
+
+@media(max-width:768px){
+    .write02 .write02_03 input{
+		width: 45%;
+	}
+	
+    .write01 span{
+		margin-right: 0;
+	}
+	
+    .write01 input{
+		margin: 0; 
+		width: 35%;
+	}
+	
+    .write01 select{
+		width: 15%;
+	}
+	
+    .write02 p{
+		width: 30%;
+	}
+	
+}

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.termsMain{
+	width: 80%;
+	background-color: #ddd; 
+	border: 1px solid #aaa; 
+	margin: 0 auto;
+}
+
+.termsSub{
+	width: 95%;
+	margin: 2% auto;
+	line-height: 1.6; 
+	background-color: #fff; 
+	border: 1px solid #ccc;
+}
+
+.termsSub>div{
+	margin: 0 1.3rem;
+}
+
+.termsSub h1{
+	font-weight: 900; 
+	margin: 20px auto;
+}
+
+.termsSub h2{
+	font-weight: 700; 
+	margin: 10px auto;
+}
+
+.termsSub p{
+	font-weight: 500;
+}

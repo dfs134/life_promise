@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lagn="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="shortcut icon" th:href="./favicon_20190919173530.ico">-->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/footer.css}">
+	<script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+	<script th:src="@{https://kit.fontawesome.com/93e14ad4d6.js}" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="wrap">
+	<div class="container">
+    	<header th:replace="common/header :: header"></header>
+	
+		<section layout:fragment="content"></section>
+
+		<footer th:replace="common/footer :: footer"></footer>
+	</div>
+</div>
+</body>
+</html>

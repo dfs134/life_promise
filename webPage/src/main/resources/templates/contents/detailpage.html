@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+    <title>생활약속 상세페이지</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/detailpage.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/swiper-bundle.min.css}">
+    <script th:src="@{/js/detailpage.js}"></script>
+    <script th:src="@{/js/swiper-bundle.min.js}"></script>
+    <style>
+        /* 스와이퍼 */
+        .swiper-container {width: 70%; height: 10%; margin-top: 11%; background-color: #eee;}
+        .swiper-pagination{display: none;}
+        .swiper-slide { 
+            width: 100%; text-align: center; font-size:18px; background: #fff;
+            display: -webkit-box; display: -ms-flexbox;display: -webkit-flex;
+            display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center; justify-content: center;
+            -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;
+        }  
+    </style>
+</head>
+    <section layout:fragment="content" class="section">
+        <div class="detail01">
+            <div class="det01 det">
+                <img src="./imeage/sec01.jpg" alt="">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_01.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_02.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_04.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_05.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_07.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_08.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_09_.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_10.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_11.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/page_13.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="./imeage/detail/quality.jpg" alt=""></a></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div class="det02 det">
+                <div class="mrg">
+                    <div>
+                        <h1>
+                            기분전환S [5gx20포]
+                        </h1>
+                        <h2>
+                            V라인을 책임질 한의사 공동개발 스페셜레시피<br>100여가지의 산야초를 한-포에 담았다!
+                        </h2>
+                    </div>
+                    <hr>
+                    <table class="detTable">
+                        <colgroup>
+                            <col width="30%">
+                            <col width="70%">
+                        </colgroup>
+                        <thead>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>소비자가</td>
+                                <td>₩42,800</td>
+                            </tr>
+                            <tr>
+                                <td>판매가</td>
+                                <td>₩36,800</td>
+                            </tr>
+                            <tr>
+                                <td>원료</td>
+                                <td>비트1,500mg, 호박750mg, 모링가750mg,<br>S-mix, NP-mix, 백야초, 특허성분2종</td>
+                            </tr>
+                            <tr>
+                                <td>상품정보</td>
+                                <td>V라인을 책임질 한의사 공동개발 스페셜레시피<br>100여가지의 산야초를 한-포에 담았다!</td>
+                            </tr>
+                            <tr>
+                                <td>적립금</td>
+                                <td>368 Point (1%)</td>
+                            </tr>
+                            <tr>
+                                <td>배송비</td>
+                                <td>₩3,000 (₩30,000 이상 구매 시 무료)</td>
+                            </tr>
+                            <tr>
+                                <td>상품</td>
+                                <td>
+                                    <p>기분전환S</p>
+                                    <input type="number" id="quantity" name="quantity" min="1" max="30">
+                                    <button>선택</button>
+                                    <p>! 위 상품 개수를 선택하시면 아래에 상품이 추가됩니다.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="tableLine"></div>
+                    <div class="detDiv01">
+                        <span>
+                            총 상품금액(수량) : 
+                        </span>
+                        <span>
+                            0 개
+                        </span>
+                    </div>
+                    <div class="detDiv02">
+                        <input type="button" value="바로 구매하기">
+                        <input type="button" value="장바구니 담기">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="detail02">
+            <div class="tableLine2"></div>
+            <div>
+                <p>상품 상세정보</p>
+            </div>
+            <div>
+                <div>
+                    <img src="./imeage/detail/page_01.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/page_02.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/page_04.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/page_05.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/page_07.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/page_08.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/page_09_.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/page_10.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/page_11.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/page_13.jpg" alt="">
+                    <br>
+                    <img src="./imeage/detail/quality.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="fixnav">
+            <a th:href="|javascript:void(0);|" class="fixbtn">
+                <i class="fa-solid fa-right-left fa-2x"></i>
+            </a>
+        </div>
+    </section>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<head>
+    <title>생활약속 고객센터</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/service.css}">
+</head>
+    <section layout:fragment="content" class="section"> 
+        <table class="listTable">
+            <caption>SERVICE CENTER</caption>
+            <colgroup>
+                <col width="10%">
+                <col width="15%">
+                <col width="15%">
+                <col width="40%">
+                <col width="10%">
+                <col width="10%">
+            </colgroup>
+            <thead>
+                <th scope="col">번호</th>
+                <th scope="col">상담유형</th>
+                <th scope="col">제목</th>
+                <th scope="col">내용</th>
+                <th scope="col">작성일자</th>
+                <th scope="col">작성자</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>10</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td><a th:href="@{/write}">내용내용내용내용내용내용내용내용내용내용내용내용내용</a></td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>
+                <tr>
+                    <th>9</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td><a href="">내용내용내용내용내용내용내용내용내용내용내용내용내용</a></td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td><a href="">내용내용내용내용내용내용내용내용내용내용내용내용내용</a></td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>
+                <tr>
+                    <th>7</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td><a href="">내용내용내용내용내용내용내용내용내용내용내용내용내용</a></td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td><a href="">내용내용내용내용내용내용내용내용내용내용내용내용내용</a></td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td>내용내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td>내용내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td>내용내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td>내용내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>상담유형</td>
+                    <td>제목</td>
+                    <td>내용내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                    <td>작성일자</td>
+                    <td>작성자</td>
+                </tr>    
+            </tbody>
+        </table>
+        <div class="writeBtn"> 
+            <input type="button" value="글쓰기" th:onClick="|location.href='@{/write}'|">
+        </div>
+        <div class="page_wrap">
+            <div class="page_nation">
+               <a class="arrow pprev" href="#">〈</a>
+               <a class="arrow prev" href="#">〈〈</a>
+               <a href="#" class="active">1</a>
+               <a href="#">2</a>
+               <a href="#">3</a>
+               <a href="#">4</a>
+               <a href="#">5</a>
+               <a href="#">6</a>
+               <a href="#">7</a>
+               <a href="#">8</a>
+               <a href="#">9</a>
+               <a href="#">10</a>
+               <a class="arrow next" href="#">〉</a>
+               <a class="arrow nnext" href="#">〉〉</a>
+            </div>
+        </div>
+        <div class="search">
+             <div class="sch search01">
+                 <p>검색어</p>
+             </div>
+             <div  class="sch search02">
+                <select name="" id="">
+                    <option value="">1주일</option>
+                    <option value="">1개월</option>
+                    <option value="">3개월</option>
+                    <option value="">6개월</option>
+                    <option value="">1년이상</option>
+                </select>
+             </div>
+             <div  class="sch search03">
+                 <select name="" id="">
+                    <option value="">내용</option>
+                    <option value="">제목</option>
+                    <option value="">글쓴이</option>
+                    <option value="">아이디</option>
+                 </select>
+             </div>
+             <div  class="sch search04">
+                 <input type="text" id="" name="" placeholder="글을 작성해주세요">
+             </div>
+             <div  class="sch search05">
+                <input type="button" id="" name="" value="검색">
+            </div>
+        </div>
+    </section>
+</html>
